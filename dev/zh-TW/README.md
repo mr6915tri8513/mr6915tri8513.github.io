@@ -1,4 +1,4 @@
----
+﻿---
 home: true
 heroImage: /avatar.png
 heroImageStyle: {
@@ -15,4 +15,4 @@ bgImageStyle: {
 
 # mr6915tri8513
 
-Learning makes me stronger, so I enjoy it.
+學習使我更強大，所以我樂在其中。
