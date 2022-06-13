@@ -1,0 +1,14 @@
+{
+  "name": "mr6915tri8513.github.io",
+  "version": "1.0.0",
+  "author": "reco_luan",
+  "scripts": {
+    "dev": "vuepress dev . --open --host \"localhost\"",
+    "build": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.7",
+    "vuepress-theme-reco": "1.6.10"
+  },
+  "description": "This is description of this project."
+}
