@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /avatar.png
+heroImage: /home_page/avatar.png
 heroImageStyle: {
   maxHeight: '200px',
   display: block,

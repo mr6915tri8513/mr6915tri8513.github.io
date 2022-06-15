@@ -61,8 +61,8 @@ module.exports = {
                         icon: "reco-category",
                         items: [
                             {
-                                text: "widget",
-                                link: "/categories/widget/",
+                                text: "record",
+                                link: "/categories/record/",
                             },
                         ]
                     }, {
@@ -72,7 +72,10 @@ module.exports = {
                             {
                                 text: "Widget",
                                 link: "/docs/widget/"
-                            },
+                            }, {
+                                text: "Project",
+                                link: "/docs/project/"
+                            }
                         ]
                     }, {
                         text: "Contact",
@@ -99,15 +102,30 @@ module.exports = {
                             children: [
                                 {
                                     title: "widget1",
-                                    path: "widget/widget1"
+                                    path: "widget/widget1/"
                                 }
                             ]
-                        },
+                        }, {
+                            title: "Project",
+                            path: "/docs/project/",
+                            collacollapsable: true,
+                            children: [
+                                {
+                                    title: "PSU Sensor",
+                                    path: "project/psu_sensor/"
+                                }
+                            ]
+                        }
                     ]
                 },
                 lastUpdated: "Last Updated",
             },
             "/zh-TW/": {
+                recoLocales: {
+                    homeBlog: {
+                        friendLink: "好友連結"
+                    }
+                },
                 selectText: "語言",
                 label: "中文-繁體",
                 editLinkText: "在 Github 上編輯此頁",
@@ -135,8 +153,8 @@ module.exports = {
                         icon: "reco-category",
                         items: [
                             {
-                                text: "小工具",
-                                link: "/zh-TW/categories/widget/",
+                                text: "紀錄",
+                                link: "/zh-TW/categories/紀錄/",
                             },
                         ]
                     }, {
@@ -146,6 +164,9 @@ module.exports = {
                             {
                                 text: "小工具",
                                 link: "/zh-TW/docs/widget/"
+                            }, {
+                                text: "專題",
+                                link: "/zh-TW/docs/project/"
                             }
                         ]
                     }, {
@@ -173,7 +194,17 @@ module.exports = {
                             children: [
                                 {
                                     title: "小工具1",
-                                    path: "widget/widget1"
+                                    path: "widget/widget1/"
+                                }
+                            ]
+                        }, {
+                            title: "專題",
+                            path: "/zh-TW/docs/project/",
+                            collacollapsable: true,
+                            children: [
+                                {
+                                    title: "電競檢測儀",
+                                    path: "project/psu_sensor/"
                                 }
                             ]
                         }
@@ -201,11 +232,11 @@ module.exports = {
                 link: "https://i-am-nothing.github.io/"
             }
         ],
-        logo: "/logo.jpg",
+        logo: "/home_page/logo.jpg",
         search: true,
         searchMaxSuggestions: 10,
         author: "mr6915tri8513",
-        authorAvatar: "/avatar.png",
+        authorAvatar: "/home_page/avatar.png",
         record: null,
         startYear: "2022",
         noFoundPageByTencent: false,
