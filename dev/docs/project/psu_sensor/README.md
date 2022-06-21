@@ -4,21 +4,37 @@ date: 2022-01-27
 author: mr6915tri8513, sstteeeenn05
 tags:
 - en-US
+- Android
+- Arduino
 ---
 
-[github link](https://github.com/mr6915tri8513/PSU-Sensor/) <font color="red">unfinished</font>
+[GitHub link](https://github.com/mr6915tri8513/PSU-Sensor/) *01/27/2022 ~ 02/18/2022*
 
-This project is for a competition in my school. The concept and the title were conceived by the other team member, while I was in charge of the app.
+This project is for a competition in my school. The concept and the title were conceived by sstteeeenn05,
+while I was in charge of the app.
+
+## What I Learned
+### Arduino
+* classic bluetooth for ESP32
+* DrawerLayout
+
+### Android
+* classic bluetooth
+
+### Others
+* Google Charts (Line Chart)
+* Base64
 
 ## Summary
 It has two parts: **the app** on the phone and **PSU Sensor** (the one in the box)
 
-After installing PSU Sensor in the place where it should be installed, setting up on the phone with bluetooth, you can just use it. EASY!
+After installing PSU Sensor in the place where it should be installed, setting up on the phone with bluetooth,
+you can just use it. EASY!
 
 <img alt="home page" src="https://raw.githubusercontent.com/mr6915tri8513/PSU-Sensor/main/image/home_page.png" height="592" width="288">
 <img alt="psu sensor" src="https://raw.githubusercontent.com/mr6915tri8513/PSU-Sensor/main/image/psu_sensor.png" height="374" width="500">
 
-## Primary Functions
+## The Main Functions
 ### Realtime Power Curve
 * monitor the energy consumption of your computer instantly
 
@@ -42,5 +58,9 @@ After installing PSU Sensor in the place where it should be installed, setting u
 
 <img alt="custom gif" src="https://raw.githubusercontent.com/mr6915tri8513/PSU-Sensor/main/image/custom_gif.png" height="592" width="288">
 
-## Review
-Well... Actually, I have nothing to say about it. ಠ∀ಠ
+## After Doing this
+Actually, I just don't want to see him make it with **APP Inventor** HAHA. ಠ∀ಠ
+
+## Continue Reading
+* [Project Report](https://docs.google.com/document/d/1FVkLBTZC96mhLJgCocfJtQiRm_G0Y6w3WS7A6OTI-0U/edit?usp=sharing)
+* [Project Poster](https://docs.google.com/presentation/d/165Q1h3KwI0_cRLtgMjYvsV04R0i37KH8IDyzQW7O_wc/edit?usp=sharing)

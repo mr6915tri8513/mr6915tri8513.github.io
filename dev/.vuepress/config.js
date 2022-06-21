@@ -1,5 +1,4 @@
-const EMAIL = "mr6915tri8513@gmail.com"
-const GITHUB = "https://github.com/mr6915tri8513"
+const path = require("path");
 module.exports = {
     locales: {
         "/": {
@@ -19,7 +18,7 @@ module.exports = {
             "link",
             {
                 rel: "icon",
-                href: "/favicon.ico"
+                href: "/home_page/icon.png"
             }
         ],
         [
@@ -61,9 +60,9 @@ module.exports = {
                         icon: "reco-category",
                         items: [
                             {
-                                text: "record",
-                                link: "/categories/record/",
-                            },
+                                text: "Diary",
+                                link: "/categories/diary/"
+                            }
                         ]
                     }, {
                         text: "Docs",
@@ -75,6 +74,9 @@ module.exports = {
                             }, {
                                 text: "Project",
                                 link: "/docs/project/"
+                            }, {
+                                text: "Others",
+                                link: "/docs/others/"
                             }
                         ]
                     }, {
@@ -83,11 +85,11 @@ module.exports = {
                         items: [
                             {
                                 text: "GitHub",
-                                link: GITHUB,
+                                link: "https://github.com/mr6915tri8513",
                                 icon: "reco-github"
                             }, {
                                 text: "Email",
-                                link: "mailto:" + EMAIL,
+                                link: "mailto:mr6915tri8513@gmail.com",
                                 icon: "reco-mail"
                             }
                         ]
@@ -111,8 +113,24 @@ module.exports = {
                             collacollapsable: true,
                             children: [
                                 {
+                                   title: "Integrated Queue System",
+                                   path: "project/integrated_queue_system/"
+                                }, {
                                     title: "PSU Sensor",
                                     path: "project/psu_sensor/"
+                                }, {
+                                    title: "Security Smart Home",
+                                    path: "project/security_smart_home/"
+                                }
+                            ]
+                        }, {
+                            title: "Others",
+                            path: "/docs/others/",
+                            collacollapsable: true,
+                            children: [
+                                {
+                                    title: "Update Record",
+                                    path: "others/update_record/"
                                 }
                             ]
                         }
@@ -121,11 +139,6 @@ module.exports = {
                 lastUpdated: "Last Updated",
             },
             "/zh-TW/": {
-                recoLocales: {
-                    homeBlog: {
-                        friendLink: "好友連結"
-                    }
-                },
                 selectText: "語言",
                 label: "中文-繁體",
                 editLinkText: "在 Github 上編輯此頁",
@@ -153,9 +166,9 @@ module.exports = {
                         icon: "reco-category",
                         items: [
                             {
-                                text: "紀錄",
-                                link: "/zh-TW/categories/紀錄/",
-                            },
+                                text: "日記",
+                                link: "/zh-TW/categories/diary/"
+                            }
                         ]
                     }, {
                         text: "文檔",
@@ -167,6 +180,9 @@ module.exports = {
                             }, {
                                 text: "專題",
                                 link: "/zh-TW/docs/project/"
+                            }, {
+                                text: "其他",
+                                link: "/zh-TW/docs/others/"
                             }
                         ]
                     }, {
@@ -175,11 +191,11 @@ module.exports = {
                         items: [
                             {
                                 text: "GitHub",
-                                link: GITHUB,
+                                link: "https://github.com/mr6915tri8513",
                                 icon: "reco-github"
                             }, {
                                 text: "電子郵件",
-                                link: "mailto:" + EMAIL,
+                                link: "mailto:mr6915tri8513@gmail.com",
                                 icon: "reco-mail"
                             }
                         ]
@@ -203,8 +219,24 @@ module.exports = {
                             collacollapsable: true,
                             children: [
                                 {
+                                    title: "整合排隊系統",
+                                    path: "project/integrated_queue_system/"
+                                }, {
                                     title: "電競檢測儀",
                                     path: "project/psu_sensor/"
+                                }, {
+                                    title: "Security Smart Home",
+                                    path: "project/security_smart_home/"
+                                }
+                            ]
+                        }, {
+                        title: "其他",
+                            path: "/zh-TW/docs/others/",
+                            collacollapsable: true,
+                            children: [
+                                {
+                                    title: "更新紀錄",
+                                    path: "others/update_record/"
                                 }
                             ]
                         }
@@ -228,8 +260,13 @@ module.exports = {
             {
                 title: "I-am-nothing",
                 desc: "He's my classmate and friend.",
-                logo: "https://i-am-nothing.github.io/hero.jpeg",
+                logo: "https://i-am-nothing.github.io/hero.png",
                 link: "https://i-am-nothing.github.io/"
+            }, {
+                title: "湊あくあ",
+                desc: "She's a VTuber in hololive",
+                logo: "https://yt3.ggpht.com/ytc/AKedOLT8eMK0R-4YoVFyKUt3r6jqZA4uq9cHf1hyVv-Oyg=s176-c-k-c0x00ffffff-no-rj",
+                link: "https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg"
             }
         ],
         logo: "/home_page/logo.jpg",
@@ -240,6 +277,9 @@ module.exports = {
         record: null,
         startYear: "2022",
         noFoundPageByTencent: false,
+        subSidebar: "auto",
+        sidebarDepth: 1,
+        displayAllHeaders: false,
     },
     markdown: {
         "lineNumbers": true
