@@ -12,6 +12,7 @@
   },
   "description": "This is description of this project.",
   "dependencies": {
-    "@vuepress/plugin-google-analytics": "^1.9.7"
+    "@vuepress/plugin-google-analytics": "^1.9.7",
+    "vuepress-plugin-sitemap": "^2.3.1"
   }
 }

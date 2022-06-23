@@ -1,12 +1,14 @@
 module.exports = {
-    plugins: [
-        [
-            '@vuepress/google-analytics',
-            {
-                'ga': 'G-170VJJB3ZL'
+    plugins: {
+        '@vuepress/last-updated': {
+            transformer: (timestamp, lang) => {
+                return new Date(timestamp).toLocaleDateString();
             }
-        ]
-    ],
+        },
+        'sitemap': {
+            hostname: 'https://mr6915tri8513.github.io'
+        }
+    },
     locales: {
         "/": {
             lang: "en-US",

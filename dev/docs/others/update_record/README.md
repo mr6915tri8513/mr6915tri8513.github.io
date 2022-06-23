@@ -3,6 +3,7 @@ title: Update Record
 date: 2022-06-14
 ---
 [湊あくあ]: https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg
+[this website]: /
 [icon]: /home_page/icon.png
 [Tag]: /tag/
 [Arduino]: /tag/Arduino/
@@ -18,6 +19,10 @@ date: 2022-06-14
 [Update Record]: /docs/others/update_record/
 
 ## 2022
+### 06/24
+* add **Google Analytics** for **[this website][]** 
+* add **Google Search Console** for **[this website][]**
+
 ### 06/21
 * replace the **[icon][]** of the website
 * add **[Security Smart Home][]** into **[Project][]**

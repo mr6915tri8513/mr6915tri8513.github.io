@@ -3,6 +3,7 @@ title: 更新紀錄
 date: 2022-06-14
 ---
 [湊あくあ]: https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg
+[此網站]: /zh-TW/
 [圖示]: /home_page/icon.png
 [標籤]: /zh-TW/tag/
 [Arduino]: /zh-TW/tag/Arduino/
@@ -18,6 +19,10 @@ date: 2022-06-14
 [更新紀錄]: /zh-TW/docs/others/update_record/
 
 ## 2022
+### 06/24
+* 為 **[此網站][]** 加入 **Google Analytics**
+* 為 **[此網站][]** 加入 Google **Search Console**
+
 ### 06/21
 * 更換了網站的 **[圖示][]**
 * 在 **[專題][]** 中加入 **[Security Smart Home][]**
