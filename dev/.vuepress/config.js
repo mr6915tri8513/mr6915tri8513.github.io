@@ -1,5 +1,12 @@
-const path = require("path");
 module.exports = {
+    plugins: [
+        [
+            '@vuepress/google-analytics',
+            {
+                'ga': 'G-170VJJB3ZL'
+            }
+        ]
+    ],
     locales: {
         "/": {
             lang: "en-US",
@@ -10,7 +17,7 @@ module.exports = {
             lang: "zh-TW",
             title: "mr6915tri8513",
             description: "某個愛寫程式的人"
-        }
+        },
     },
     dest: "../docs",
     head: [
@@ -20,14 +27,25 @@ module.exports = {
                 rel: "icon",
                 href: "/home_page/icon.png"
             }
-        ],
-        [
+        ], [
             "meta",
             {
                 name: "viewport",
                 content: "width=device-width,initial-scale=1,user-scalable=no"
             }
-        ]
+        ], [
+            'script',
+            {
+                async: true,
+                src: 'https://www.googletagmanager.com/gtag/js?id=G-2D0HV8QJX9',
+            },
+        ], [
+            'script',
+            {},
+            [
+                "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-2D0HV8QJX9');",
+            ],
+        ],
     ],
     theme: "reco",
     themeConfig: {
@@ -53,11 +71,24 @@ module.exports = {
                         icon: "reco-date"
                     }, {
                         text: "Tags",
+                        icon: "reco-tag",
                         link: "/tag/",
-                        icon: "reco-tag"
+                        items: [
+                            {
+                                text: "Android",
+                                link: "/tag/Android/"
+                            }, {
+                                text: "Arduino",
+                                link: "/tag/Arduino/"
+                            }, {
+                                text: "Windows Forms",
+                                link: "/tag/Windows%20Forms/"
+                            }
+                        ]
                     }, {
                         text: "Categories",
                         icon: "reco-category",
+                        link: "/categories/",
                         items: [
                             {
                                 text: "Diary",
@@ -100,7 +131,7 @@ module.exports = {
                         {
                             title: "Widget",
                             path: "/docs/widget/",
-                            collacollapsable: true,
+                            collacollapsable: false,
                             children: [
                                 {
                                     title: "widget1",
@@ -110,7 +141,7 @@ module.exports = {
                         }, {
                             title: "Project",
                             path: "/docs/project/",
-                            collacollapsable: true,
+                            collacollapsable: false,
                             children: [
                                 {
                                    title: "Integrated Queue System",
@@ -126,7 +157,7 @@ module.exports = {
                         }, {
                             title: "Others",
                             path: "/docs/others/",
-                            collacollapsable: true,
+                            collacollapsable: false,
                             children: [
                                 {
                                     title: "Update Record",
@@ -159,15 +190,28 @@ module.exports = {
                         icon: "reco-date"
                     }, {
                         text: "標籤",
+                        icon: "reco-tag",
                         link: "/zh-TW/tag/",
-                        icon: "reco-tag"
+                        items: [
+                            {
+                                text: "Android",
+                                link: "/zh-TW/tag/Android/"
+                            }, {
+                                text: "Arduino",
+                                link: "/zh-TW/tag/Arduino/"
+                            }, {
+                                text: "Windows Forms",
+                                link: "/zh-TW/tag/Windows%20Forms/"
+                            }
+                        ]
                     }, {
-                        text: "類別",
+                        text: "分類",
                         icon: "reco-category",
+                        link: "/zh-TW/categories/",
                         items: [
                             {
                                 text: "日記",
-                                link: "/zh-TW/categories/diary/"
+                                link: "/zh-TW/categories/日記/"
                             }
                         ]
                     }, {
@@ -206,7 +250,7 @@ module.exports = {
                         {
                             title: "小工具",
                             path: "/zh-TW/docs/widget/",
-                            collacollapsable: true,
+                            collacollapsable: false,
                             children: [
                                 {
                                     title: "小工具1",
@@ -216,7 +260,7 @@ module.exports = {
                         }, {
                             title: "專題",
                             path: "/zh-TW/docs/project/",
-                            collacollapsable: true,
+                            collacollapsable: false,
                             children: [
                                 {
                                     title: "整合排隊系統",
@@ -232,7 +276,7 @@ module.exports = {
                         }, {
                         title: "其他",
                             path: "/zh-TW/docs/others/",
-                            collacollapsable: true,
+                            collacollapsable: false,
                             children: [
                                 {
                                     title: "更新紀錄",
@@ -247,13 +291,27 @@ module.exports = {
         },
         type: "blog",
         blogConfig: {
-            category: {
-                "location": 2,
-                text: "Category"
-            },
-            tag: {
-                "location": 3,
-                text: "Tag"
+            locales: {
+                "/": {
+                    category: {
+                        location: 2,
+                        text: "Category2"
+                    },
+                    tag: {
+                        location: 3,
+                        text: "Tag2"
+                    }
+                },
+                "/zh-TW/": {
+                    category: {
+                        location: 2,
+                        text: "abc"
+                    },
+                    tag: {
+                        location: 3,
+                        text: "def"
+                    }
+                }
             }
         },
         friendLink: [

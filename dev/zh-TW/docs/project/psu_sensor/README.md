@@ -3,7 +3,6 @@ title: 電競檢測儀
 date: 2022-01-27
 author: mr6915tri8513, sstteeeenn05
 tags:
-- 中文-繁體
 - Android
 - Arduino
 ---

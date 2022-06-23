@@ -3,7 +3,6 @@ title: 整合排隊系統
 date: 2021-12-04
 author: mr6915tri8513, jojotom0702
 tags:
-- 中文-繁體
 - Android
 - Arduino
 - Windows Forms

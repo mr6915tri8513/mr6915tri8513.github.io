@@ -1,8 +1,6 @@
 ---
 title: 更新紀錄
 date: 2022-06-14
-tags:
-- 中文-繁體
 ---
 [湊あくあ]: https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg
 [圖示]: /home_page/icon.png

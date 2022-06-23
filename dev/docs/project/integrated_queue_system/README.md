@@ -3,7 +3,6 @@ title: Integrated Queue System
 date: 2021-12-04
 author: mr6915tri8513, jojotom0702
 tags:
-- en-US
 - Android
 - Arduino
 - Windows Forms

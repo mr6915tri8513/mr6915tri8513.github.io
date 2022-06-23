@@ -3,7 +3,6 @@ title: PSU Sensor
 date: 2022-01-27
 author: mr6915tri8513, sstteeeenn05
 tags:
-- en-US
 - Android
 - Arduino
 ---

@@ -1,8 +1,6 @@
 ---
 title: Update Record
 date: 2022-06-14
-tags:
-- en-US
 ---
 [湊あくあ]: https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg
 [icon]: /home_page/icon.png

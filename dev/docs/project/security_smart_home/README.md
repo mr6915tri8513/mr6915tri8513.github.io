@@ -3,7 +3,6 @@ title: Security Smart Home
 date: 2021-01-25
 author: I-am-nothing, mr6915tri8513, Andybobo, Mr. Illustrator, sstteeeenn05
 tags:
-- en-US
 - Android
 - Arduino
 ---
