@@ -49,7 +49,6 @@ module.exports = {
             ],
         ],
     ],
-    theme: "reco",
     themeConfig: {
         locales: {
             "/": {
