@@ -37,18 +37,34 @@ module.exports = (options, ctx) => ({
           path: '/tag/',
           layout: 'Tags',
           scopeLayout: 'Tag'
-        },
-        {
+        }, {
           id: 'categories',
           keys: ['categories'],
           path: '/categories/',
           layout: 'Categories',
           scopeLayout: 'Category'
-        },
-        {
+        }, {
           id: 'timeline',
           keys: ['timeline'],
           path: '/timeline/',
+          layout: 'TimeLines',
+          scopeLayout: 'TimeLine'
+        }, {
+          id: 'tags',
+          keys: ['tags'],
+          path: '/zh-TW/tag/',
+          layout: 'Tags',
+          scopeLayout: 'Tag'
+        }, {
+          id: 'categories',
+          keys: ['categories'],
+          path: '/zh-TW/categories/',
+          layout: 'Categories',
+          scopeLayout: 'Category'
+        }, {
+          id: 'timeline',
+          keys: ['timeline'],
+          path: '/zh-TW/timeline/',
           layout: 'TimeLines',
           scopeLayout: 'TimeLine'
         },

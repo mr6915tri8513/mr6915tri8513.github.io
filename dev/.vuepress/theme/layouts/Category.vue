@@ -48,7 +48,11 @@ export default defineComponent({
 
     const posts = computed(() => {
       let posts = instance.$currentCategories.pages
-      posts = filterPosts(posts)
+      const localeConfig = {
+        localePath: instance.$localePath,
+        locales: Object.keys(instance.$site.locales)
+      }
+      posts = filterPosts(posts, false, localeConfig)
       sortPostsByStickyAndDate(posts)
       return posts
     })

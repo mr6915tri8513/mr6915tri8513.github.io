@@ -5,7 +5,11 @@ export default {
     $recoPosts () {
       let posts = this.$site.pages
 
-      posts = filterPosts(posts, false)
+      const localeConfig = {
+        localePath: this.$localePath,
+        locales: Object.keys(this.$site.locales)
+      }
+      posts = filterPosts(posts, false, localeConfig)
       sortPostsByStickyAndDate(posts)
 
       return posts
@@ -14,7 +18,11 @@ export default {
       let pages = this.$recoPosts
       const formatPages = {}
       const formatPagesArr = []
-      pages = filterPosts(pages, true)
+      const localeConfig = {
+        localePath: this.$localePath,
+        locales: Object.keys(this.$site.locales)
+      }
+      pages = filterPosts(pages, true, localeConfig)
       this.pages = pages.length == 0 ? [] : pages
       for (let i = 0, length = pages.length; i < length; i++) {
         const page = pages[i]
@@ -37,17 +45,27 @@ export default {
       return formatPagesArr
     },
     $categoriesList () {
+      const locales = Object.keys(this.$site.locales)
+      const localePath = this.$localePath
       return this.$categories.list.map(category => {
+        category.path = category.path.replace(/^\/?[\w-]*\/categories/, localePath + 'categories')
         category.pages = category.pages.filter(page => {
-          return page.frontmatter.publish !== false
+          const localeCondition = localePath === '/' ?
+              !locales.some(locale => locale !== '/' && page.path.startsWith(locale)) : page.path.startsWith(localePath)
+          return page.frontmatter.publish !== false && localeCondition
         })
         return category
       })
     },
-    $tagesList () {
+    $tagsList () {
+      const locales = Object.keys(this.$site.locales)
+      const localePath = this.$localePath
       return this.$tags.list.map(tag => {
+        tag.path = tag.path.replace(/^\/?[\w-]*\/tag/, localePath + 'tag')
         tag.pages = tag.pages.filter(page => {
-          return page.frontmatter.publish !== false
+          const localeCondition = localePath === '/' ?
+            !locales.some(locale => locale !== '/' && page.path.startsWith(locale)) : page.path.startsWith(localePath)
+          return page.frontmatter.publish !== false && localeCondition
         })
         return tag
       })

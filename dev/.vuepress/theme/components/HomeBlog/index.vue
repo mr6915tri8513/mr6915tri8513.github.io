@@ -36,7 +36,10 @@
           <PersonalInfo/>
           <h4><reco-icon icon="reco-category" /> {{$recoLocales.category}}</h4>
           <ul class="category-wrapper">
-            <li class="category-item" v-for="(item, index) in this.$categories.list" :key="index">
+            <li class="category-item"
+                v-for="(item, index) in this.$categoriesList"
+                v-show="item.pages.length > 0"
+                :key="index">
               <router-link :to="item.path">
                 <span class="category-name">{{ item.name }}</span>
                 <span class="post-num" :style="{ 'backgroundColor': getOneColor() }">{{ item.pages.length }}</span>
@@ -46,7 +49,9 @@
           <hr>
           <h4 v-if="$tags.list.length !== 0"><reco-icon icon="reco-tag" /> {{$recoLocales.tag}}</h4>
           <TagList @getCurrentTag="getPagesByTags" />
-          <h4 v-if="$themeConfig.friendLink && $themeConfig.friendLink.length !== 0"><reco-icon icon="reco-friend" /> {{$recoLocales.friendLink}}</h4>
+          <h4 v-if="($themeConfig.friendLink && $themeConfig.friendLink.length !== 0) ||
+            ($themeLocaleConfig.friendLink && $themeLocaleConfig.friendLink.length !== 0)">
+            <reco-icon icon="reco-friend" /> {{$recoLocales.friendLink}}</h4>
           <FriendLink />
         </div>
       </div>

@@ -61,6 +61,15 @@ module.exports = {
                         buttonText: "Refresh"
                     }
                 },
+                tagLocale: {
+                    arduino: "Arduino",
+                    android: "Android",
+                    windows_forms: "Windows Forms",
+                    lang: "English"
+                },
+                categoryLocale: {
+                    diary: "Diary"
+                },
                 nav: [
                     {
                         text: "Home",
@@ -73,27 +82,14 @@ module.exports = {
                     }, {
                         text: "Tags",
                         icon: "reco-tag",
-                        link: "/tag/",
-                        items: [
-                            {
-                                text: "Android",
-                                link: "/tag/Android/"
-                            }, {
-                                text: "Arduino",
-                                link: "/tag/Arduino/"
-                            }, {
-                                text: "Windows Forms",
-                                link: "/tag/Windows%20Forms/"
-                            }
-                        ]
+                        link: "/tag/"
                     }, {
                         text: "Categories",
                         icon: "reco-category",
-                        link: "/categories/",
                         items: [
                             {
                                 text: "Diary",
-                                link: "/categories/diary/"
+                                link: "/categories/Diary/"
                             }
                         ]
                     }, {
@@ -161,6 +157,10 @@ module.exports = {
                             collacollapsable: false,
                             children: [
                                 {
+                                    title: "Locale Optimization",
+                                    path: "others/locale_optimization/"
+                                },
+                                {
                                     title: "Update Record",
                                     path: "others/update_record/"
                                 }
@@ -169,6 +169,19 @@ module.exports = {
                     ]
                 },
                 lastUpdated: "Last Updated",
+                friendLink: [
+                    {
+                        title: "I-am-nothing",
+                        desc: "He's my senior high school classmate and friend.",
+                        logo: "https://i-am-nothing.github.io/hero.png",
+                        link: "https://i-am-nothing.github.io/"
+                    }, {
+                        title: "湊あくあ",
+                        desc: "She's a VTuber in hololive",
+                        logo: "https://yt3.ggpht.com/ytc/AKedOLT8eMK0R-4YoVFyKUt3r6jqZA4uq9cHf1hyVv-Oyg=s176-c-k-c0x00ffffff-no-rj",
+                        link: "https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg"
+                    }
+                ],
             },
             "/zh-TW/": {
                 selectText: "語言",
@@ -179,6 +192,26 @@ module.exports = {
                         message: "發現新內容",
                         buttonText: "刷新"
                     }
+                },
+                recoLocales: {
+                    homeBlog: {
+                        tag: "標籤"
+                    },
+                    pagation: {
+                        prev: '上一頁',
+                        next: '下一頁',
+                        go: 'GO',
+                        jump: '跳轉至'
+                    }
+                },
+                tagLocale: {
+                    arduino: "Arduino",
+                    android: "Android",
+                    windows_forms: "Windows Forms",
+                    lang: "中文"
+                },
+                categoryLocale: {
+                    diary: "日記"
                 },
                 nav: [
                     {
@@ -192,23 +225,10 @@ module.exports = {
                     }, {
                         text: "標籤",
                         icon: "reco-tag",
-                        link: "/zh-TW/tag/",
-                        items: [
-                            {
-                                text: "Android",
-                                link: "/zh-TW/tag/Android/"
-                            }, {
-                                text: "Arduino",
-                                link: "/zh-TW/tag/Arduino/"
-                            }, {
-                                text: "Windows Forms",
-                                link: "/zh-TW/tag/Windows%20Forms/"
-                            }
-                        ]
+                        link: "/zh-TW/tag/"
                     }, {
                         text: "分類",
                         icon: "reco-category",
-                        link: "/zh-TW/categories/",
                         items: [
                             {
                                 text: "日記",
@@ -280,6 +300,10 @@ module.exports = {
                             collacollapsable: false,
                             children: [
                                 {
+                                    title: "語言環境優化",
+                                    path: "others/locale_optimization/"
+                                },
+                                {
                                     title: "更新紀錄",
                                     path: "others/update_record/"
                                 }
@@ -287,7 +311,20 @@ module.exports = {
                         }
                     ]
                 },
-                lastUpdated: "最後更新"
+                lastUpdated: "最後更新",
+                friendLink: [
+                    {
+                        title: "I-am-nothing",
+                        desc: "他是我的高中同學兼朋友",
+                        logo: "https://i-am-nothing.github.io/hero.png",
+                        link: "https://i-am-nothing.github.io/"
+                    }, {
+                        title: "湊あくあ",
+                        desc: "她是 hololive 旗下的一位 VTuber",
+                        logo: "https://yt3.ggpht.com/ytc/AKedOLT8eMK0R-4YoVFyKUt3r6jqZA4uq9cHf1hyVv-Oyg=s176-c-k-c0x00ffffff-no-rj",
+                        link: "https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg"
+                    }
+                ],
             },
         },
         type: "blog",
@@ -315,20 +352,8 @@ module.exports = {
                 }
             }
         },
-        friendLink: [
-            {
-                title: "I-am-nothing",
-                desc: "He's my classmate and friend.",
-                logo: "https://i-am-nothing.github.io/hero.png",
-                link: "https://i-am-nothing.github.io/"
-            }, {
-                title: "湊あくあ",
-                desc: "She's a VTuber in hololive",
-                logo: "https://yt3.ggpht.com/ytc/AKedOLT8eMK0R-4YoVFyKUt3r6jqZA4uq9cHf1hyVv-Oyg=s176-c-k-c0x00ffffff-no-rj",
-                link: "https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg"
-            }
-        ],
         logo: "/home_page/logo.jpg",
+        mode: "dark",
         search: true,
         searchMaxSuggestions: 10,
         author: "mr6915tri8513",

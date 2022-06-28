@@ -3,6 +3,8 @@ title: Update Record
 date: 2022-06-14
 ---
 [湊あくあ]: https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg
+[Google Analytics]: https://analytics.google.com/
+[Google Search Console]: https://search.google.com/
 [this website]: /
 [icon]: /home_page/icon.png
 [Tag]: /tag/
@@ -17,11 +19,18 @@ date: 2022-06-14
 [Integrated Queue System]: /docs/project/integrated_queue_system
 [Others]: /docs/others/
 [Update Record]: /docs/others/update_record/
+[Locale Optimization]: /docs/others/locale_optimization/
 
 ## 2022
+### 06/29
+* add **[Locale Optimization][]** into **[Others][]**
+
+### 06/27
+* locale optimization (see **[Locale Optimization][]** for detail)
+
 ### 06/24
-* add **Google Analytics** for **[this website][]** 
-* add **Google Search Console** for **[this website][]**
+* add **[Google Analytics][]** for **[this website][]** 
+* add **[Google Search Console][]** for **[this website][]**
 
 ### 06/21
 * replace the **[icon][]** of the website
@@ -30,7 +39,7 @@ date: 2022-06-14
 * correct **github** to **GitHub** in each project
 * rename **Primary Functions** **The Main Functions** in each project
 * classify items in the **What I Learned** of each project
-* add **After Doing this** into each project
+* add **After Doing This** into each project
 * add [Tag][] [Arduino][]、[Android][]、[Windows Forms][]
 
 ### 06/20

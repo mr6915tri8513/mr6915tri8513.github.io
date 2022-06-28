@@ -50,7 +50,9 @@ export default defineComponent({
         const currentLink = instance.$page.path
         const routes = instance.$router.options.routes
         const themeLocales = instance.$themeConfig.locales || {}
+        const localePath = instance.$localePath
         const languageDropdown = {
+          icon: 'reco-language',
           text: instance.$themeLocaleConfig.selectText || 'Languages',
           items: Object.keys(locales).map(path => {
             const locale = locales[path]
@@ -59,7 +61,29 @@ export default defineComponent({
             // Stay on the current page
             if (locale.lang === instance.$lang) {
               link = currentLink
-            } else {
+            } else if (currentLink.startsWith(localePath + 'categories')) {
+              if (themeLocales[localePath].categoryLocale && themeLocales[path].categoryLocale) {
+                const name = currentLink.slice(localePath.length + 11, -1)
+                for (const id in themeLocales[localePath].categoryLocale) {
+                  if (themeLocales[localePath].categoryLocale[id] === name && themeLocales[path].categoryLocale[id]) {
+                    link = path + 'categories/' + themeLocales[path].categoryLocale[id] + '/'
+                    break
+                  }
+                }
+              }
+            } else if (currentLink.startsWith(localePath + 'tag')) {
+              if (themeLocales[localePath].tagLocale && themeLocales[path].tagLocale) {
+                const name = currentLink.slice(localePath.length + 4, -1)
+                for (const id in themeLocales[localePath].tagLocale) {
+                  if (themeLocales[localePath].tagLocale[id] === name && themeLocales[path].tagLocale[id]) {
+                    link = path + 'tag/' + themeLocales[path].tagLocale[id] + '/'
+                    break
+                  }
+                }
+              }
+            }
+
+            if (!link) {
               // Try to stay on the same page
               link = currentLink.replace(instance.$localeConfig.path, path)
               // fallback to homepage

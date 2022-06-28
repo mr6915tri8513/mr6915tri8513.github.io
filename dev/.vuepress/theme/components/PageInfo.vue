@@ -68,8 +68,9 @@ export default defineComponent({
     }
 
     const goTags = (tag) => {
-      if (instance.$route.path !== `/tag/${tag}/`) {
-        instance.$router.push({ path: `/tag/${tag}/` })
+      const localePath = instance.$localePath
+      if (instance.$route.path !== localePath + `tag/${tag}/`) {
+        instance.$router.push({ path: localePath + `tag/${tag}/` })
       }
     }
 

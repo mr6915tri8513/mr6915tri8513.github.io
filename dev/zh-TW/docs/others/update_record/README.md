@@ -3,6 +3,8 @@ title: 更新紀錄
 date: 2022-06-14
 ---
 [湊あくあ]: https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg
+[Google Analytics]: https://analytics.google.com/
+[Google Search Console]: https://search.google.com/
 [此網站]: /zh-TW/
 [圖示]: /home_page/icon.png
 [標籤]: /zh-TW/tag/
@@ -17,11 +19,18 @@ date: 2022-06-14
 [整合排隊系統]: /zh-TW/docs/project/integrated_queue_system/
 [其他]: /zh-TW/docs/others/
 [更新紀錄]: /zh-TW/docs/others/update_record/
+[語言環境優化]: /zh-TW/docs/others/locale_optimization/
 
 ## 2022
+### 06/29
+* 在 **[其他][]** 中加入 **[語言環境優化][]**
+
+### 06/27
+* 語言環境優化 (詳見 **[語言環境優化][]**)
+
 ### 06/24
-* 為 **[此網站][]** 加入 **Google Analytics**
-* 為 **[此網站][]** 加入 Google **Search Console**
+* 為 **[此網站][]** 加入 **[Google Analytics][]**
+* 為 **[此網站][]** 加入 **[Google Search Console][]**
 
 ### 06/21
 * 更換了網站的 **[圖示][]**

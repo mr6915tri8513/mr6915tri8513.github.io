@@ -42,7 +42,11 @@ export default defineComponent({
     // 时间降序后的博客列表
     const posts = computed(() => {
       let posts = instance.$currentTags.pages
-      posts = filterPosts(posts)
+      const localeConfig = {
+        localePath: instance.$localePath,
+        locales: Object.keys(instance.$site.locales)
+      }
+      posts = filterPosts(posts, false, localeConfig)
       sortPostsByStickyAndDate(posts)
       return posts
     })

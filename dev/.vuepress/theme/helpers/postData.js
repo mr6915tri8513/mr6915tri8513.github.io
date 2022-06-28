@@ -1,14 +1,17 @@
 import { compareDate } from '@theme/helpers/utils'
 
 // 过滤博客数据
-export function filterPosts (posts, isTimeline) {
+export function filterPosts (posts, isTimeline, localeConfig) {
+  const { localePath, locales = [] } = localeConfig || {}
+  const regExp = new RegExp(`^${ locales.filter(locale => locale !== '/').join('|') }`)
   posts = posts.filter((item, index) => {
-    const { title, frontmatter: { home, date, publish } } = item
+    const { title, path, frontmatter: { home, date, publish } } = item
     // 过滤多个分类时产生的重复数据
     if (posts.indexOf(item) !== index) {
       return false
     } else {
-      const someConditions = home === true || title == undefined || publish === false
+      const localeCondition = localePath === '/' ? !regExp.test(path) : path.startsWith(localePath)
+      const someConditions = home === true || title == undefined || publish === false || !localeCondition
       const boo = isTimeline === true
         ? !(someConditions || date === undefined)
         : !someConditions

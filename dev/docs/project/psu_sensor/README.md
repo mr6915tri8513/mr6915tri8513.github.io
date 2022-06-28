@@ -57,7 +57,7 @@ you can just use it. EASY!
 
 <img alt="custom gif" src="https://raw.githubusercontent.com/mr6915tri8513/PSU-Sensor/main/image/custom_gif.png" height="592" width="288">
 
-## After Doing this
+## After Doing This
 Actually, I just don't want to see him make it with **APP Inventor** HAHA. ಠ∀ಠ
 
 ## Continue Reading

@@ -25,7 +25,7 @@ export default defineComponent({
   setup (props, ctx) {
     const instance = useInstance()
     const tags = computed(() => {
-      return [{ name: instance.$recoLocales.all, path: '/tag/' }, ...instance.$tagesList]
+      return [{ name: instance.$recoLocales.all, path: instance.$localePath + 'tag/' }, ...instance.$tagsList]
     })
 
     const tagClick = tag => {
