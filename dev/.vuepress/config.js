@@ -107,20 +107,6 @@ module.exports = {
                                 link: "/docs/others/"
                             }
                         ]
-                    }, {
-                        text: "Contact",
-                        icon: "reco-message",
-                        items: [
-                            {
-                                text: "GitHub",
-                                link: "https://github.com/mr6915tri8513",
-                                icon: "reco-github"
-                            }, {
-                                text: "Email",
-                                link: "mailto:mr6915tri8513@gmail.com",
-                                icon: "reco-mail"
-                            }
-                        ]
                     }
                 ],
                 sidebar: {
@@ -157,10 +143,12 @@ module.exports = {
                             collacollapsable: false,
                             children: [
                                 {
+                                    title: "About The Pictures On This Website",
+                                    path: "others/about_the_pictures_on_this_website/"
+                                }, {
                                     title: "Locale Optimization",
                                     path: "others/locale_optimization/"
-                                },
-                                {
+                                }, {
                                     title: "Update Record",
                                     path: "others/update_record/"
                                 }
@@ -182,6 +170,19 @@ module.exports = {
                         link: "https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg"
                     }
                 ],
+                blogConfig: {
+                    socialLinks: [
+                        {
+                            text: "GitHub",
+                            icon: "reco-github",
+                            link: "https://github.com/mr6915tri8513"
+                        }, {
+                            text: "mail",
+                            icon: "reco-mail",
+                            link: "mailto:mr6915tri8513@gmail.com"
+                        }
+                    ]
+                }
             },
             "/zh-TW/": {
                 selectText: "語言",
@@ -250,20 +251,6 @@ module.exports = {
                                 link: "/zh-TW/docs/others/"
                             }
                         ]
-                    }, {
-                        text: "聯絡方式",
-                        icon: "reco-message",
-                        items: [
-                            {
-                                text: "GitHub",
-                                link: "https://github.com/mr6915tri8513",
-                                icon: "reco-github"
-                            }, {
-                                text: "電子郵件",
-                                link: "mailto:mr6915tri8513@gmail.com",
-                                icon: "reco-mail"
-                            }
-                        ]
                     }
                 ],
                 sidebar: {
@@ -300,10 +287,12 @@ module.exports = {
                             collacollapsable: false,
                             children: [
                                 {
+                                    title: "關於本網站的圖片",
+                                    path: "others/about_the_pictures_on_this_website/"
+                                }, {
                                     title: "語言環境優化",
                                     path: "others/locale_optimization/"
-                                },
-                                {
+                                }, {
                                     title: "更新紀錄",
                                     path: "others/update_record/"
                                 }
@@ -325,33 +314,22 @@ module.exports = {
                         link: "https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg"
                     }
                 ],
+                blogConfig: {
+                    socialLinks: [
+                        {
+                            text: "GitHub",
+                            icon: "reco-github",
+                            link: "https://github.com/mr6915tri8513"
+                        }, {
+                            text: "電子郵件",
+                            icon: "reco-mail",
+                            link: "mailto:mr6915tri8513@gmail.com"
+                        }
+                    ]
+                }
             },
         },
         type: "blog",
-        blogConfig: {
-            locales: {
-                "/": {
-                    category: {
-                        location: 2,
-                        text: "Category2"
-                    },
-                    tag: {
-                        location: 3,
-                        text: "Tag2"
-                    }
-                },
-                "/zh-TW/": {
-                    category: {
-                        location: 2,
-                        text: "abc"
-                    },
-                    tag: {
-                        location: 3,
-                        text: "def"
-                    }
-                }
-            }
-        },
         logo: "/home_page/logo.jpg",
         mode: "dark",
         search: true,

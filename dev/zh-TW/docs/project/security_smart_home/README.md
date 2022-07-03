@@ -31,7 +31,7 @@ GitHub 連結：
 ## 簡介
 這是一個關於互聯網的專題，主打 **快速安裝**、**低成本** 和 **高安全性**。
 
-<img alt="封面" src="/project/security_smart_home/front_cover.png" height="540" width="679">
+![封面](/project/security_smart_home/front_cover.png)
 
 ## 主要功能
 ### 家庭裝置
@@ -39,19 +39,19 @@ GitHub 連結：
 * 遠端控制電源開關
 * 可依據客戶需求自己改裝
 
-<img alt="繼電器版本裝置結構" src="/project/security_smart_home/structure_relay.png" height="424" width="399">
+![繼電器版本裝置結構](/project/security_smart_home/structure_relay.png)
 
 ### 戶外模式
 * 重複利用你的舊手機
 * 紀錄陌生人的長相並上傳
 * 若當時家中無人還會傳送通知
 
-<img alt="戶外模式" src="/project/security_smart_home/outdoor_mode.png" height="313" width="636">
+![戶外模式](/project/security_smart_home/outdoor_mode.png)
 
 ### 離線模式
 * 就算網際網路斷線了也不會讓所有裝置癱瘓
 
-<img alt="離線模式" src="/project/security_smart_home/offline_mode.png" height="540" width="646">
+![離線模式](/project/security_smart_home/offline_mode.png)
 
 ## 其他功能
 ### 空中編程 OTA
@@ -67,3 +67,18 @@ GitHub 連結：
 * [二代報告](https://docs.google.com/document/d/1pIwP28cPY0j0kTdAGPogLw7TcMTjWPokIr8tGELqfSE/edit?usp=sharing)
 
 版權聲明：本篇所有圖片皆為 Mr. Illustrator 所有
+
+<style>
+img[alt="封面"] {
+    max-height: 540px;
+}
+img[alt="繼電器版本裝置結構"] {
+    max-height: 424px;
+}
+img[alt="戶外模式"] {
+    max-height: 313px;
+}
+img[alt="離線模式"] {
+    max-height: 500px;
+}
+</style>

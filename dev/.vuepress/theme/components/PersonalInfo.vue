@@ -28,7 +28,7 @@
       v-for="(item, index) in socialLinks"
       :key="index"
     >
-      <reco-icon :icon="item.icon" :link="item.link" :style="{ color: item.color }" />
+      <reco-icon :title="item.text" :icon="item.icon" :link="item.link" :style="{ color: item.color }"/>
     </li>
   </ul>
   <hr>
@@ -45,7 +45,9 @@ export default defineComponent({
   components: { RecoIcon },
   setup (props, ctx) {
     const instance = useInstance()
-    const socialLinks = computed(() => (instance.$themeConfig.blogConfig && instance.$themeConfig.blogConfig.socialLinks || []).map(item => {
+    const socialLinks = computed(() => (
+        (instance.$themeLocaleConfig.blogConfig && instance.$themeLocaleConfig.blogConfig.socialLinks) ||
+        (instance.$themeConfig.blogConfig && instance.$themeConfig.blogConfig.socialLinks) || []).map(item => {
       if (!item.color) item.color = getOneColor()
       return item
     }))
@@ -96,6 +98,7 @@ export default defineComponent({
     display flex
     flex-wrap wrap
     padding 10px
+    justify-content center
     .social-item {
       width 39px
       height 36px

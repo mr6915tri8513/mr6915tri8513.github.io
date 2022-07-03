@@ -33,7 +33,7 @@ as well as **the translation** of the report.
 ## Summary
 This is a project about the **IOT**, featuring **quick installation**, **low cost** and **high security**.
 
-<img alt="front cover" src="/project/security_smart_home/front_cover.png" height="540" width="679">
+![front cover](/project/security_smart_home/front_cover.png)
 
 ## The Main Functions
 ### Home Device
@@ -41,19 +41,19 @@ This is a project about the **IOT**, featuring **quick installation**, **low cos
 * remote control the power switch
 * can be modified depends on customer needs
 
-<img alt="structure of relay type device" src="/project/security_smart_home/structure_relay.png" height="424" width="399">
+![structure of relay type device](/project/security_smart_home/structure_relay.png)
 
 ### Outdoor Mode
 * reuse your old phone
 * record the stranger's face and upload it
 * a notification will also be sent if no one is home at that time
 
-<img alt="outdoor mode" src="/project/security_smart_home/outdoor_mode.png" height="313" width="636">
+![outdoor mode](/project/security_smart_home/outdoor_mode.png)
 
 ### Offline Mode
 * even if the Internet goes down, it won't take everything down
 
-<img alt="offline mode" src="/project/security_smart_home/offline_mode.png" height="540" width="646">
+![offline mode](/project/security_smart_home/offline_mode.png)
 
 ## Other Functions
 ### OTA (Over-the-Air Programming)
@@ -72,3 +72,18 @@ The process was hard, though, it was the one I learned the most, as well as the 
 * [2 Gen Report](https://docs.google.com/document/d/1pIwP28cPY0j0kTdAGPogLw7TcMTjWPokIr8tGELqfSE/edit?usp=sharing)
 
 Copyright Notice: All images in this article are owned by Mr. Illustrator
+
+<style>
+img[alt="front cover"] {
+    max-height: 540px;
+}
+img[alt="structure of relay type device"] {
+    max-height: 424px;
+}
+img[alt="outdoor mode"] {
+    max-height: 313px;
+}
+img[alt="offline mode"] {
+    max-height: 500px;
+}
+</style>

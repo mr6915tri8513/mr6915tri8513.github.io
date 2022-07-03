@@ -1,6 +1,6 @@
 <template>
   <div class="home-blog">
-    <div class="hero" :style="{ ...bgImageStyle }">
+    <div class="hero">
       <div>
         <ModuleTransition>
           <img
@@ -58,7 +58,9 @@
     </ModuleTransition>
 
     <ModuleTransition delay="0.24">
-      <Content v-show="recoShowModule" class="home-center" custom/>
+      <div style="margin: auto 20px;">
+        <Content class="home-center" custom/>
+      </div>
     </ModuleTransition>
   </div>
 </template>
@@ -87,28 +89,12 @@ export default defineComponent({
 
     const heroImageStyle = computed(() => instance.$frontmatter.heroImageStyle || {})
 
-    const bgImageStyle = computed(() => {
-      const url = instance.$frontmatter.bgImage
-        ? instance.$withBase(instance.$frontmatter.bgImage)
-        : require('../../images/bg.svg')
-
-      const initBgImageStyle = {
-        textAlign: 'center',
-        overflow: 'hidden',
-        background: `url(${url}) center/cover no-repeat`
-      }
-
-      const { bgImageStyle } = instance.$frontmatter
-
-      return bgImageStyle ? { ...initBgImageStyle, ...bgImageStyle } : initBgImageStyle
-    })
-
     onMounted(() => {
       state.heroHeight = document.querySelector('.hero').clientHeight
       state.recoShow = true
     })
 
-    return { recoShowModule, heroImageStyle, bgImageStyle, ...toRefs(state), getOneColor }
+    return { recoShowModule, heroImageStyle, ...toRefs(state), getOneColor }
   },
   methods: {
     paginationChange (page) {
@@ -136,6 +122,8 @@ export default defineComponent({
     display flex
     align-items center
     justify-content center
+    text-align center
+    overflow: hidden
     .hero-img {
       max-width: 300px;
       margin: 0 auto 1.5rem
@@ -145,12 +133,14 @@ export default defineComponent({
       display: block;
       margin:0 auto 1.8rem;
       font-size: 2.5rem;
+      text-shadow: 2px 2px 12px var(--default-color-10);
     }
 
     .description {
       margin: 1.8rem auto;
       font-size: 1.6rem;
       line-height: 1.3;
+      text-shadow: 2px 2px 12px var(--default-color-10);
     }
   }
   .home-blog-wrapper {
@@ -180,7 +170,7 @@ export default defineComponent({
       box-shadow var(--box-shadow)
       border-radius $borderRadius
       box-sizing border-box
-      padding 0 15px
+      padding 1px 15px
       background var(--background-color)
       &:hover {
         box-shadow var(--box-shadow-hover)
@@ -223,6 +213,14 @@ export default defineComponent({
         }
       }
     }
+  }
+  .home-center {
+    border-radius: $borderRadius
+    box-shadow: var(--box-shadow);
+    box-sizing: border-box;
+    background-color: var(--background-color)
+    margin: 16px auto !important
+    color: $accentColor
   }
 }
 

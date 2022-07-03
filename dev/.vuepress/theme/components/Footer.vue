@@ -60,6 +60,7 @@ export default defineComponent({
     border-top: 1px solid var(--border-color);
     text-align: center;
     color: lighten($textColor, 25%);
+    background-color: var(--background-color)
     a {
       font-size 14px
     }

@@ -8,10 +8,12 @@
       <router-link :to="item.path">{{item.title}}</router-link>
     </div>
     <div class="abstract" v-html="item.excerpt"></div>
-    <PageInfo
+    <PageInfo class="page-info"
       :pageInfo="item"
       :currentTag="currentTag">
     </PageInfo>
+    <div class="draw-meet-1"></div>
+    <div class="draw-meet-2"></div>
   </div>
 </template>
 
@@ -46,10 +48,31 @@ export default defineComponent({
     top 0
     left 0
     display inline-block
-    color $accentColor
+    color $stickyColor
     font-size 2.4rem
+    z-index 5
   &:hover
+    color $accentColor
     box-shadow: var(--box-shadow-hover)
+    .title
+      a
+        color $accentColor
+      &::after
+        visibility visible
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    .draw-meet-1, .draw-meet-2
+      width: 100%;
+      height: 100%;
+    .draw-meet-1
+      border-top-color: $accentColor;
+      border-right-color: $accentColor;
+      transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    .draw-meet-2
+      border-bottom-color: $accentColor;
+      border-left-color: $accentColor;
+      transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+
   .title
     position: relative;
     font-size: 1.28rem;
@@ -72,18 +95,28 @@ export default defineComponent({
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
       transition: .3s ease-in-out;
-    &:hover a
-      color $accentColor
-    &:hover:after
-      visibility visible
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
   .tags
     .tag-item
       &.active
         color $accentColor
       &:hover
         color $accentColor
+
+  .page-info
+    position: relative
+    z-index: 1;
+
+  .draw-meet-1, .draw-meet-2
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    border: 3px solid transparent;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+
+
 @media (max-width: $MQMobile)
   .tags
     display block

@@ -66,16 +66,16 @@ export default defineComponent({
   max-width: $contentWidth;
   margin: 0 auto;
   padding: 4.6rem 2.5rem 0;
+  background: var(--background-color)
   .timeline-content
     box-sizing border-box
     position relative
     list-style none
-    &::after {
+    &::before {
       content: " ";
       position: absolute;
       top: 14px;
       left: 0;
-      z-index: -1;
       margin-left: -2px;
       width: 4px;
       height: 100%;

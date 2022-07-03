@@ -37,12 +37,12 @@
         <p class="inner">
           <span v-if="prev" class="prev">
             <router-link v-if="prev" class="prev" :to="prev.path">
-              {{ prev.title || prev.path }}
+              {{ `<- ${ $recoLocales.pagation && $recoLocales.pagation.prev || 'Prev' }&nbsp;&nbsp;&nbsp;${ prev.title || prev.path }` }}
             </router-link>
           </span>
           <span v-if="next" class="next">
             <router-link v-if="next" :to="next.path">
-              {{ next.title || next.path }}
+              {{ `${ next.title || next.path }&nbsp;&nbsp;&nbsp;${ $recoLocales.pagation && $recoLocales.pagation.next || 'Next'} ->` }}
             </router-link>
           </span>
         </p>
@@ -74,7 +74,7 @@ export default defineComponent({
 
   setup (props, ctx) {
     const instance = useInstance()
-
+    console.log(instance)
     const { sidebarItems } = toRefs(props)
 
     const recoShowModule = computed(() => instance.$parent.recoShowModule)
@@ -246,6 +246,7 @@ function flatten (items, res) {
   padding-bottom 2rem
   padding-right 14rem
   display block
+  background var(--background-color)
   .side-bar
     position fixed
     top 10rem
