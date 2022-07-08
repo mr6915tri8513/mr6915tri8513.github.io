@@ -74,7 +74,6 @@ export default defineComponent({
 
   setup (props, ctx) {
     const instance = useInstance()
-    console.log(instance)
     const { sidebarItems } = toRefs(props)
 
     const recoShowModule = computed(() => instance.$parent.recoShowModule)

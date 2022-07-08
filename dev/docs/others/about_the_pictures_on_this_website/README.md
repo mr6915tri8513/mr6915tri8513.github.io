@@ -1,11 +1,12 @@
 ---
-title: About Pictures On This Website
+title: About The Pictures On This Website
 date: 2022-07-03
 sticky: 1
 ---
-**I do not own all the following pictures, and all the rights belong to the original artist.**
-
+**I do not own all the following pictures, and all the rights belong to the original artist.**  
 **If there is any infringement, please let me know, and I will replace the picture.** (. ❛ ᴗ ❛.)
+
+my email: [mr6915tri8513@gmail.com](mailto:mr6915tri8513@gmail.com)
 
 ## Icon
 ![icon](/home_page/icon.png)  
@@ -33,7 +34,7 @@ Source: [Twitter](https://twitter.com/shima1709/status/1371492409335455752 "紫�
 [にんにくましまし]: https://twitter.com/shima1709
 
 <style>
-img {
+img[src^="/home_page/"] {
     max-height: 150px;
 }
 </style>

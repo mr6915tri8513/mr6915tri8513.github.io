@@ -1,6 +1,7 @@
 ---
 title: Update Record
 date: 2022-06-14
+isShowComments: false
 ---
 [湊あくあ]: https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg
 [Google Analytics]: https://analytics.google.com/
@@ -14,8 +15,6 @@ date: 2022-06-14
 [Windows Forms]: /tag/Windows%20Forms/
 [Project]: /docs/project/
 [PSU Sensor]: /docs/project/psu_sensor/
-[What I Learned]: /docs/project/psu_sensor/#what-i-learned
-[Continue Reading]: /docs/project/psu_sensor/#continue-reading
 [Security Smart Home]: /docs/project/security_smart_home/
 [Integrated Queue System]: /docs/project/integrated_queue_system
 [Others]: /docs/others/
@@ -24,6 +23,11 @@ date: 2022-06-14
 [Locale Optimization]: /docs/others/locale_optimization/
 
 ## 2022
+### 07/08
+* fixed the bug of pictures
+* fixed some mistakes in **[PSU Sensor][]**
+* added **comments** function
+
 ### 07/03
 * added **[About The Pictures On This Website][]** into **[Others][]**
 
@@ -73,8 +77,8 @@ date: 2022-06-14
 * added **[湊あくあ][]** into **Friend Links**
 * renamed category **record** **update record**
 * removed ***Review*** in **[PSU Sensor][]**
-* added ***[What I Learned][]*** into **[PSU Sensor][]**
-* added ***[Continue Reading][]*** into **[PSU Sensor][]**
+* added **What I Learned** into **[PSU Sensor][]**
+* added **Continue Reading** into **[PSU Sensor][]**
 
 ### 06/15
 * added **[Project][]** into **Docs**

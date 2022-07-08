@@ -6,18 +6,18 @@ tags:
 - Android
 - Arduino
 ---
-`
+
 [GitHub 連結](https://github.com/mr6915tri8513/psu_sensor/) *2022/01/27 ~ 2022/02/18*
 
 這是一個校內競賽的專題。概念和名稱是由 sstteeeenn05 想的，而我負責 APP 製作。
 
 ## 學習成果
-### Arduino
-* ESP32 的經典藍芽
-* DrawerLayout
-
 ### Android
 * 經典藍芽
+* DrawerLayout
+
+### Arduino
+* ESP32 的經典藍芽
 
 ### 其他
 * Google 圖表 (折線圖)
@@ -61,12 +61,3 @@ tags:
 ## 繼續閱讀
 * [專題報告](https://docs.google.com/document/d/1FVkLBTZC96mhLJgCocfJtQiRm_G0Y6w3WS7A6OTI-0U/edit?usp=sharing)
 * [專題海報](https://docs.google.com/presentation/d/165Q1h3KwI0_cRLtgMjYvsV04R0i37KH8IDyzQW7O_wc/edit?usp=sharing)
-
-<style>
-img {
-    max-height: 592px;
-}
-img[alt="電競檢測儀"] {
-    max-height: 374px;
-}
-</style>

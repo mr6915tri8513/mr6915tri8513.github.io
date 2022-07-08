@@ -1,6 +1,7 @@
 ---
 title: 更新紀錄
 date: 2022-06-14
+isShowComments: false
 ---
 [湊あくあ]: https://www.youtube.com/channel/UC1opHUrw8rvnsadT-iGp7Cg
 [Google Analytics]: https://analytics.google.com/
@@ -14,8 +15,6 @@ date: 2022-06-14
 [Windows Forms]: /zh-TW/tag/Windows%20Forms/
 [專題]: /zh-TW/docs/project/
 [電競檢測儀]: /zh-TW/docs/project/psu_sensor/
-[學習成果]: /zh-TW/docs/project/psu_sensor/#學習成果
-[繼續閱讀]: /zh-TW/docs/project/psu_sensor/#繼續閱讀
 [Security Smart Home]: /zh-TW/docs/project/security_smart_home/
 [整合排隊系統]: /zh-TW/docs/project/integrated_queue_system/
 [其他]: /zh-TW/docs/others/
@@ -24,6 +23,11 @@ date: 2022-06-14
 [更新紀錄]: /zh-TW/docs/others/update_record/
 
 ## 2022
+### 07/08
+* 修復了圖片的 bug
+* 修正了 **[電競檢測儀][]** 中的一些錯誤
+* 加入了 **評論** 功能
+
 ### 07/03
 * 在 **[其他][]** 中加入了 **[關於此網站的圖片][]**
 
@@ -73,8 +77,8 @@ date: 2022-06-14
 * 在 **友情鏈接** 中加入了 **[湊あくあ][]**
 * 將類別 **紀錄** 重新命名為 **更新紀錄**
 * 移除了 **[電競檢測儀][]** 的 **心得**
-* 新增了 **[電競檢測儀][]** 的 **[學習成果][]**
-* 新增了 **[電競檢測儀][]** 的 **[繼續閱讀][]**
+* 新增了 **[電競檢測儀][]** 的 **學習成果**
+* 新增了 **[電競檢測儀][]** 的 **繼續閱讀**
 
 ### 06/15
 * 在 **文檔** 中加入了 **[專題][]**

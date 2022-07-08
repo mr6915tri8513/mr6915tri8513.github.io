@@ -13,12 +13,12 @@ This project is for a competition in my school. The concept and the title were c
 while I was in charge of the app.
 
 ## What I Learned
-### Arduino
-* classic bluetooth for ESP32
-* DrawerLayout
-
 ### Android
 * classic bluetooth
+* DrawerLayout
+
+### Arduino
+* classic bluetooth for ESP32
 
 ### Others
 * Google Charts (Line Chart)
@@ -65,10 +65,10 @@ Actually, I just don't want to see him make it with **APP Inventor** HAHA. à² âˆ
 * [Project Poster](https://docs.google.com/presentation/d/165Q1h3KwI0_cRLtgMjYvsV04R0i37KH8IDyzQW7O_wc/edit?usp=sharing)
 
 <style>
-img {
+img[src^="https://raw.githubusercontent.com/mr6915tri8513/PSU-Sensor/main/image/"] {
     max-height: 592px;
 }
-img[alt="PSU sensor"] {
+img[src="https://raw.githubusercontent.com/mr6915tri8513/PSU-Sensor/main/image/psu_sensor.png"] {
     max-height: 374px;
 }
 </style>

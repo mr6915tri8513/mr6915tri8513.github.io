@@ -5,6 +5,8 @@ sticky: 1
 ---
 我並不擁有以下所有圖片，所有權力歸原作者所有，如有侵權請告知，我會撤換該圖片。(. ❛ ᴗ ❛.)
 
+我的 email：[mr6915tri8513@gmail.com](mailto:mr6915tri8513@gmail.com)
+
 ## 圖示
 ![圖示](/home_page/icon.png)  
 繪師：[まっちゃ][] 老師  
@@ -31,7 +33,7 @@ sticky: 1
 [にんにくましまし]: https://twitter.com/shima1709
 
 <style>
-img {
+img[src^="/home_page/"] {
     max-height: 150px;
 }
 </style>

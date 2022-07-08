@@ -17,13 +17,13 @@ GitHub 連結：
 我主要負責 **Arduino** 和部分的 **APP**，以及報告的 **翻譯**。
 
 ## 學習成果
+### Android
+* RecyclerView 的 **項目的移動(拖曳)**
+
 ### Arduino
 * **ESP32** 和 **ESP8266** 的 **OTA** 和 **EEPROM**
 * 嘗試了 **P2P(Peer to Peer)** 來取代 **AP** (ESP32 和 ESP8266 不支援)
 * 嘗試了 **Socket Server** 取代 **HTTP Server** (就...不知道 ESP8266 哪裡有問題 (#｀-_ゝ-) )
-
-### Android
-* RecyclerView 的 **項目的移動(拖曳)**
 
 ### 其他
 * 少許英文能力
@@ -67,18 +67,3 @@ GitHub 連結：
 * [二代報告](https://docs.google.com/document/d/1pIwP28cPY0j0kTdAGPogLw7TcMTjWPokIr8tGELqfSE/edit?usp=sharing)
 
 版權聲明：本篇所有圖片皆為 Mr. Illustrator 所有
-
-<style>
-img[alt="封面"] {
-    max-height: 540px;
-}
-img[alt="繼電器版本裝置結構"] {
-    max-height: 424px;
-}
-img[alt="戶外模式"] {
-    max-height: 313px;
-}
-img[alt="離線模式"] {
-    max-height: 500px;
-}
-</style>

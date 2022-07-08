@@ -6,7 +6,7 @@ module.exports = {
             }
         },
         'sitemap': {
-            hostname: 'https://mr6915tri8513.github.io'
+            hostname: 'https://mr6915tri8513.github.io/'
         }
     },
     locales: {
@@ -182,6 +182,14 @@ module.exports = {
                             link: "mailto:mr6915tri8513@gmail.com"
                         }
                     ]
+                },
+                vssueConfig: {
+                    platform: 'github',
+                    owner: 'mr6915tri8513',
+                    repo: 'mr6915tri8513.github.io',
+                    clientId: '0c1b084dc011af264f38',
+                    clientSecret: '89160c67da6ea1a3c43878639703149ef7cb0119',
+                    locale: 'en-US'
                 }
             },
             "/zh-TW/": {
@@ -326,6 +334,14 @@ module.exports = {
                             link: "mailto:mr6915tri8513@gmail.com"
                         }
                     ]
+                },
+                vssueConfig: {
+                    platform: 'github',
+                    owner: 'mr6915tri8513',
+                    repo: 'mr6915tri8513.github.io',
+                    clientId: '0c1b084dc011af264f38',
+                    clientSecret: '89160c67da6ea1a3c43878639703149ef7cb0119',
+                    locale: 'zh-TW'
                 }
             },
         },

@@ -19,13 +19,13 @@ I was mainly responsible for **Arduino** and **part of the APP**,
 as well as **the translation** of the report.
 
 ## What I learned
+### Android
+* RecyclerView **Items' moving(dragging)**
+
 ### Arduino
 * **OTA** and **EEPROM** about **ESP32** and **ESP8266**
 * tried **P2P(Peer to Peer)** to replace **AP** (ESP32 and ESP8266 not supported)
 * tried **Socket Server** instead of **HTTP Server** (Just... don't know what's wrong with ESP8266 (#｀-_ゝ-) )
-
-### Android
-* Android RecyclerView **Items' moving(dragging)**
 
 ### Others
 * a little English ability
@@ -74,16 +74,16 @@ The process was hard, though, it was the one I learned the most, as well as the 
 Copyright Notice: All images in this article are owned by Mr. Illustrator
 
 <style>
-img[alt="front cover"] {
+img[src="/project/security_smart_home/front_cover.png"] {
     max-height: 540px;
 }
-img[alt="structure of relay type device"] {
+img[src="/project/security_smart_home/structure_relay.png"] {
     max-height: 424px;
 }
-img[alt="outdoor mode"] {
+img[src="/project/security_smart_home/outdoor_mode.png"] {
     max-height: 313px;
 }
-img[alt="offline mode"] {
+img[src="/project/security_smart_home/offline_mode.png"] {
     max-height: 500px;
 }
 </style>
